@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-commerce website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" ></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" aria-hidden="true" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" aria-hidden="true" id="close-btn" onclick="closemenu()"></i>
+            <img src="images/img1.png" class="logo">
+            <input type="text" class="form-control">
+            <span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>cart</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li>On sale <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                </ul>
+                 </li>
+                <li>Mobiles <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                    </ul>
+                </li>
+                <li>Computers <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                    </ul>
+                </li>
+                <li>Books <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                        <li>Sub Menu-4</li>
+                    </ul>
+                </li>
+                <li>Fitness <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                        <li>Sub Menu-5</li>
+                    </ul>
+                </li>
+                <li>Baby Care <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                        <li>Sub Menu-6</li>
+                    </ul>
+                </li>
+                <li>Magazines<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                        <li>Sub Menu-7</li>
+                    </ul>
+                </li>
+                <li>Grocery<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                        <li>Sub Menu-8</li>
+                    </ul>
+                </li>
+                <li>Furniture <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                        <li>Sub Menu-9</li>
+                    </ul>
+                </li>
+                <li>    Accessories <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <ul>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                        <li>Sub Menu-10</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="slider">
+            <div id="slider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/im1.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/im2.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/im3.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/im4.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+              </div>
+        </div>
+    </section>\
+    <!--------------------------feaured categories ------------------>
+    <section class="featured-categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/pexels-web-donut-19090.jpg" id="cat">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/pexels-philip-lindvall-1120275 (1).jpg" id="cat">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/pexels-splitshire-1591.jpg" id="cat">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------on scale product----------------------------->
+    <section class="on-scale">
+        <div class="conatainer">
+            <div class="title-box">
+                <h2>On Sale</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                      <a href="product.html">  <img src="images/pexels-max-avans-5058216.jpg" id="salep"></a>
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>analog watch</h3>
+                        <h5>$40.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"> <img src="images/wedges.jpeg" id="salep"></a>
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>wedges</h3>
+                        <h5>$55.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html"> <img src="images/book.jpeg" id="salep"></a>
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>book</h3>
+                        <h5>$20.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <a href="product.html">  <img src="images/handbag.jpeg" id="salep"></a>
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>handbag</h3>
+                        <h5>$60.00</h5>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-----------------------------------new products------------------->
+    <section class="new-products">
+        <div class="conatainer">
+            <div class="title-box">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/smartwatch.jpeg" id="salep">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>smart watch</h3>
+                        <h5>$100.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/book2.jpeg" id="salep">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>novels</h3>
+                        <h5>$55.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/sunglasses.jpeg" id="salep">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Sunglasses</h3>
+                        <h5>$80.00</h5>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="images/mobile.jpeg" id="salep">
+                        <div class="overlay-right">
+                            <button type="button"class="btn btn-secondary" title="quick shop">
+                                <i class="fa fa-eye"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to wishlist">
+                                <i class="fa fa-heart-o"></i>
+                            </button>
+                            <button type="button"class="btn btn-secondary" title="add to cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>mobile</h3>
+                        <h5>$200.00</h5>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <!------------------------------website features---------------------------->
+    <section class="website-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 feature-box">
+                    <img src="images/gurantee.jfif">
+                    <div class="feature-text">
+                        <p><b>100% Origibal items</b> are available at company</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="images/30days2.png">
+                    <div class="feature-text">
+                        <p><b>Return within 30 days</b> of receiving your order</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="images/homedelivery.png">
+                    <div class="feature-text">
+                        <p><b>Get free delivery for every</b> order more than price</p>
+                    </div>
+                </div>
+                <div class="col-md-3 feature-box">
+                    <img src="images/payment.png">
+                    <div class="feature-text">
+                        <p><b>pay online through multiple</b> payment options(card/net banking)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------Footer------------>
+    <section class="footer">
+        <div class="container tex-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>useful links</h1>
+                    <p>privacy policy</p>
+                    <p>Terms of use</p>
+                    <p>return policy</p>
+                    <p>discount</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Comapny</h1>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                    <p>Career</p>
+                    <p>Affiliate</p>
+                </div>
+                <div class="col-md-3">
+                    <h1>Follow Us On</h1>
+                    <p><i class="fa fa-facebook-official"></i> Facebook</p>
+                    <p><i class="fa fa-youtube-play"></i> Youtube</p>
+                    <p><i class="fa fa-linkedin"></i> LinkedIn</p>
+                    <p><i class="fa fa-twitter"></i> Twitter</p>
+                </div>
+                <div class="col-md-3 footer-image">
+                    <h1>Download App</h1>
+                    <img src="images/app.png">
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Jahnavi </p>
+        </div>
+    </section>
+
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+
+    </script>
+</body>
+</html>
